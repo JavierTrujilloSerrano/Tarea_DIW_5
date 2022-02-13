@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>DASHBOARD - Gestión de usuarios</title>
+</head>
+
+<body>
+    <div>
+        <!--- Encabezado -->
+        <div>
+            <div class="bg-encabezado navbar-dark p-3">
+                <h1 class="text-white-50">TU TIENDA OUTLET </h1>
+
+                <!--- Menú desplegable -->
+                <button class="navbar-toggler navbar-toggler-icon shadow" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                    aria-label="Toggle navigation"></button>
+            </div>
+
+            <div class="collapse" id="menu">
+                <a href="#" class="list-group-item list-group-item-action bg-primary active">
+                    <img src="img/hogar1.png" class="me-2 iconos d-inline-block align-text-top" height="20">Dashboard
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <img src="img/usuario.svg" class="me-2 iconos d-inline-block align-text-top" height="20">Usuarios
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <img src="img/bolsa-de-la-compra.svg" class="me-2 iconos d-inline-block align-text-top"
+                        height="20">Productos
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <img src="img/histograma-de-grafico.svg" class="me-2 iconos d-inline-block align-text-top"
+                        height="20">Graficos
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <img src="img/documento.svg" class="me-2 iconos d-inline-block align-text-top" height="20">Informes
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent fw-bold">
+                    <img src="img/poder.svg" class="me-2 iconos d-inline-block align-text-top" height="20">Cerrar
+                    sesión </a>
+            </div>
+            <!--- Menú desplegable fin -->
+
+        </div>
+
+        <!--- Encabezado fin -->
+
+        <!--- Parte Dashboard -->
+        <div id="main-page" class="container-fluid mb-4">
+            <h2>Dashboard</h2>
+            <div class="row m-1 w-auto">
+                <div class="col-sm w-75 mx-2 card shadow m-0 callout-info">
+                    <div>
+                        <p class="fw-bold text-info"> INGRESOS (Anual)</p>
+                        <h3>1300,00 €</h3>
+                    </div>
+                </div>
+                <div class="col-sm w-75 mx-2 card shadow  callout-primary">
+                    <div>
+                        <p class="fw-bold text-primary">GASTOS (Anual)</p>
+                        <h3>1000,00 €</h3>
+                    </div>
+                </div>
+                <div class="col-sm w-75 mx-2 card shadow m-0 callout-success">
+                    <div>
+                        <p class="fw-bold text-success">BENEFICIOS (Anual)</p>
+                        <h3>300,00 </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Parte Productos -->
+            <h2 class="my-3">Productos </h2>
+            <div class="card shadow">
+                <div class="w-auto mx-3 mt-2 fw-bold">Productos más vendidos</div>
+                <div class="container row m-1  mb-4 w-auto">
+
+                    <!--- Parte Acordeon -->
+                    <div class="accordion" id="acordeon">
+
+
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="cabecera1">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Smartphone
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse " aria-labelledby="heading1"
+                                data-bs-parent="#acordeon">
+                                <div class="accordion-header">
+                                    <div>
+                                        <div class="m-3 pb-4"> <img src="./img/xiaomi.png"
+                                                alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                            <span class="fw-bold mx-2">Código:</span>299423<br>
+                                            <span class="fw-bold mx-2">Producto: </span>Xiaomi Redmi
+                                            Note 9 Pro 6/64GB
+                                            Verde Tropical<br>
+                                            <div class="float-end"><button
+                                                    class="mx-2 btn border-primary rounded-pill"><span
+                                                        class="fw-bold">Precio: 250,25 €</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="cabecera2">
+                                <button class="accordion-button bg-gris" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Monitores
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse " aria-labelledby="heading2"
+                                data-bs-parent="#acordeon">
+                                <div class="accordion-header">
+                                    <div>
+                                        <div class="m-3 pb-4"> <img src="./img/pantalla.png"
+                                                alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                            <span class="fw-bold mx-2">Código:</span>414013<br>
+                                            <span class="fw-bold mx-2">Producto: </span> NewSkill Icarus RGB 27" LED
+                                            Fast IPS QHD 180Hz G-Sync Compatible<br>
+                                            <div class="float-end"><button
+                                                    class="mx-2 btn border-primary rounded-pill "><span
+                                                        class="fw-bold ">Precio: 343,98 €</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- Parte perifericos con varios item -->
+
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="cabecera3">
+                                <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Periféricos
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="cabecera3"
+                                data-bs-parent="#acordeon">
+                                <div class="accordion-header">
+
+                                    <div class="m-3 pb-5 border"> <img src="./img/mouse.png"
+                                            alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                        <span class="fw-bold mx-2">Código:</span>433507<br>
+                                        <span class="fw-bold mx-2">Producto: </span>Tempest X20W Vigilant Raton Gaming
+                                        Inalámbrico<br>
+                                        <div class="float-end "><button
+                                                class="mx-2 btn border-primary rounded-pill "><span
+                                                    class="fw-bold ">Precio: 49,99 €</span></button>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="m-3 pb-5 border bg-gris"> <img src="./img/webcam.png"
+                                                alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                            <span class="fw-bold mx-2">Código:</span>258324<br>
+                                            <span class="fw-bold mx-2">Producto: </span>Logitech C920s Pro Webcam<br>
+                                            <div class="float-end"><button
+                                                    class="mx-2 btn border-primary rounded-pill "><span
+                                                        class="fw-bold ">Precio: 75,99 €</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--- Parte perifericos con varios item fin -->
+
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="cabecera4">
+                                <button class="accordion-button bg-gris" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Componentes
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                data-bs-parent="#acordeon">
+                                <div class="accordion-header">
+                                    <div>
+                                        <div class="m-3 pb-4"> <img src="./img/torre.png"
+                                                alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical">
+                                            <span class="fw-bold mx-2">Código:</span>386825<br>
+                                            <span class="fw-bold mx-2">Producto: </span>Tempest Vapor USB 3.0 Ventana
+                                            RGB Negro <br>
+                                            <div class="float-end"><button
+                                                    class="mx-2 btn border-primary rounded-pill "><span
+                                                        class="fw-bold ">Precio: 56,99 €</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Parte Acordeon fin -->
+                </div>
+                <!--- Parte Productos fin -->
+            </div>
+            <!--- Parte Dashboard fin -->
+
+        </div>
+        <!--- Pie -->
+        <div class="text-center fw-bold bg-dark p-4 text-white">Copyright © 2022</div>
+        <!--- Pie fin -->
+</body>
+
+</html>
